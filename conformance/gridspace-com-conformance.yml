@@ -1,0 +1,24 @@
+generated: '2026-10-22'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.goguava.ai/guides/outbound-and-sms-permissions.md
+sources:
+- https://docs.goguava.ai/guides/outbound-and-sms-permissions.md
+- https://goguava.ai:443/privacy
+standards:
+- id: soc2
+  conforms: true
+  evidence: Guava SOC 2 Type II · HITRUST i1 · PCI DSS L1
+- id: hitrust
+  conforms: true
+  evidence: Guava SOC 2 Type II · HITRUST i1 · PCI DSS L1
+- id: pci-dss
+  conforms: true
+  evidence: Guava SOC 2 Type II · HITRUST i1 · PCI DSS L1
+- id: hitrust
+  conforms: true
+  evidence: 'Compliant Language Support: English and Spanish are currently supported for HITRUST / PCI-compliant deployments.'
+- id: pci-dss
+  conforms: true
+  evidence: 'Compliant Language Support: English and Spanish are currently supported for HITRUST / PCI-compliant deployments.'
+docs: https://docs.goguava.ai/guides/outbound-and-sms-permissions.md

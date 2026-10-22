@@ -1,25 +1,106 @@
 aid: gridspace-com
+
 name: Gridspace
-description: 'Gridspace is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by bloomberg-beta) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://goguava.ai/og/default.png
+
+description: 'Guava provides a voice agent API that lets developers and businesses build conversational voice applications for regulated call environments. The platform offers a proprietary stack with built‑in compliance (SOC 2, HITRUST, PCI DSS) and real‑time telephony, targeting sectors such as healthcare, insurance, fintech, government, and BPO.'
+
 url: https://raw.githubusercontent.com/api-evangelist/gridspace-com/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
-- Company
-apis: []
+- Voice AI
+- API
+- Regulated Compliance
+- Healthcare
+- Insurance
+- Fintech
+- Government
+- BPO
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- bloomberg-beta
+
 common:
+- type: Vendors
+  url: vendors/gridspace-com-vendors.yml
+- type: Plans
+  url: plans/gridspace-com-plans-pricing.yml
+- type: ChangeLog
+  url: changelog/gridspace-com-changelog.yml
+- type: Authentication
+  url: authentication/gridspace-com-authentication.yml
+- type: Conformance
+  url: conformance/gridspace-com-conformance.yml
+- type: AgentCard
+  url: a2a/gridspace-com-a2a.yml
+- type: WellKnown
+  url: well-known/gridspace-com-well-known.yml
+- type: Hosts
+  url: hosts/gridspace-com-hosts.yml
+- type: SDKs
+  url: packages/gridspace-com-packages.yml
+- type: Packages
+  url: packages/gridspace-com-packages.yml
+- type: TermsOfService
+  url: https://goguava.ai:443/terms
+- type: StatusPage
+  url: https://status.gridspace.com/status/
+- type: PrivacyPolicy
+  url: https://goguava.ai:443/privacy
+- type: Pricing
+  url: https://goguava.ai:443/pricing
+- type: Leadership
+  url: https://goguava.ai:443/team
+- type: GitHubOrganization
+  url: https://github.com/goguava-ai
+- type: DeveloperPortal
+  url: https://goguava.ai:443/developers
+- type: Blog
+  url: https://goguava.ai:443/blog
+- type: GettingStarted
+  url: https://docs.goguava.ai/getting-started/quickstart
+- type: Documentation
+  url: https://docs.gridspace.com/
+- type: APIReference
+  url: https://docs.goguava.ai/llms.txt
+- type: DomainSecurity
+  url: security/gridspace-com-domain-security.yml
 - type: Website
   url: https://www.gridspace.com
+
+apis: []
+
+x-backed-by:
+- bloomberg-beta
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: Provider's documentation does not publish a machine‑readable OpenAPI spec for Gridspace; only a Guava API spec unrelated to Gridspace was found.
+  evidence:
+    - url: https://docs.goguava.ai/llms.txt
+      status: 200
+  checked: '2026-10-22'
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 22
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

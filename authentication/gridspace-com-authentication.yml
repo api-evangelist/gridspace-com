@@ -1,0 +1,16 @@
+generated: '2026-10-22'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.goguava.ai/getting-started/quickstart.md
+sources:
+- https://docs.goguava.ai/getting-started/quickstart.md
+- https://docs.goguava.ai/getting-started/sdk-quickstart.md
+- https://docs.goguava.ai/getting-started/architecture-overview.md
+- https://docs.goguava.ai/getting-started/inbound-rag-example.md
+description: Authentication methods as documented
+schemes:
+- type: apiKey
+  name: GUAVA_API_KEY
+  evidence: 'export GUAVA_API_KEY="gva-..." # Set to your API key.'
+  how_to_obtain: Create an API key using the API Keys page.
+docs: https://docs.goguava.ai/getting-started/quickstart.md

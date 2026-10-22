@@ -1,0 +1,58 @@
+generated: '2026-10-22'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://goguava.ai:443/pricing
+sources:
+- https://goguava.ai:443/pricing
+name: Gridspace pricing
+audience: business-product
+pricing_basis: per-seat
+plans:
+- name: Starter
+  price_text: $0 / month
+  price: 0
+  description: Free tier with 500 minutes / year, $0.15 / min overage, Full API + SDK access, Basic voice & agent capabilities, Community support,
+    Watermarked / limited concurrency
+  features:
+  - 500 minutes / year
+  - $0.15 / min overage
+  - Full API + SDK access
+  - Basic voice & agent capabilities
+  - Community support
+  - Watermarked / limited concurrency
+- name: Growth Build
+  price_text: $149 / month
+  price: 149
+  description: 1,500 minutes / year, $0.14 / min overage, Full API + SDK access, Custom prompts & orchestration, Basic analytics, Discord support
+  features:
+  - 1,500 minutes / year
+  - $0.14 / min overage
+  - Full API + SDK access
+  - Custom prompts & orchestration
+  - Basic analytics
+  - Discord support
+- name: Pro Scale
+  price_text: $499 / month
+  price: 499
+  description: 7,000 minutes / year, $0.13 / min overage, Advanced orchestration & controls, Real-time tuning & debugging tools, Email support,
+    Light SLA
+  features:
+  - 7,000 minutes / year
+  - $0.13 / min overage
+  - Advanced orchestration & controls
+  - Real-time tuning & debugging tools
+  - Email support
+  - Light SLA
+- name: Enterprise
+  price_text: Contact Sales
+  description: Custom volume, no overages, dedicated infrastructure, advanced reliability & compliance, custom SLAs, dedicated support staff,
+    volume discounts
+  features:
+  - Custom volume
+  - No overages
+  - Dedicated infrastructure
+  - Advanced reliability & compliance
+  - Custom SLAs
+  - Dedicated support staff
+  - Volume discounts
+docs: https://goguava.ai:443/pricing

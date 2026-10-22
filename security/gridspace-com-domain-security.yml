@@ -1,0 +1,16 @@
+generated: '2026-10-21'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.gridspace.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Dec  7 17:32:11 2026 GMT
+  hsts: false
+domains:
+- domain: gridspace.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine

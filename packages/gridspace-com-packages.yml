@@ -1,0 +1,20 @@
+generated: '2026-10-22'
+method: searched
+source: https://registry.npmjs.org/@guava-ai/guava-sdk, https://pypi.org/pypi/guava-sdk/json
+packages:
+  - name: "@guava-ai/guava-sdk"
+    registry: "npm"
+    url: "https://www.npmjs.com/package/@guava-ai/guava-sdk"
+    language: "JavaScript"
+    official: true
+    version: "0.41.0"
+    published: null
+    note: "latest version from npm registry"
+  - name: "guava-sdk"
+    registry: "pypi"
+    url: "https://pypi.org/project/guava-sdk/"
+    language: "Python"
+    official: true
+    version: "0.49.0"
+    published: null
+    note: "latest version from PyPI"

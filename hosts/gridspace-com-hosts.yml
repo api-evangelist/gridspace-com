@@ -1,0 +1,150 @@
+generated: '2026-10-22'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 11
+  own: 4
+  other_domain: 6
+  platform: 1
+  roles:
+  - api
+  - docs
+  - other
+  - portal
+  - source
+  - status
+  - website
+hosts:
+- host: api.goguava.ai
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: goguava.ai
+  role: api
+  relation: other-domain
+- host: api.gridspace.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: gridspace.com
+  role: api
+  relation: own
+- host: app.goguava.ai
+  found_by:
+  - docs-index
+  - spec-found
+  types: []
+  serves:
+  - docs
+  - spec
+  registrable_domain: goguava.ai
+  role: other
+  relation: other-domain
+- host: docs.goguava.ai
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - docs-index
+  - well-known
+  types:
+  - GettingStarted
+  - APIReference
+  serves:
+  - docs
+  registrable_domain: goguava.ai
+  role: docs
+  relation: other-domain
+- host: docs.gridspace.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Documentation
+  serves:
+  - docs
+  - cdn
+  vendor: cloudflare
+  registrable_domain: gridspace.com
+  role: docs
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: goguava.ai
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: goguava.ai
+  role: other
+  relation: other-domain
+- host: goguava.ai:443
+  found_by:
+  - pointer
+  - docs-index
+  types:
+  - TermsOfService
+  - PrivacyPolicy
+  - Pricing
+  - Leadership
+  - DeveloperPortal
+  - Blog
+  serves:
+  - docs
+  registrable_domain: goguava.ai:443
+  role: portal
+  relation: other-domain
+- host: mintlify.com
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: mintlify.com
+  role: other
+  relation: other-domain
+- host: status.gridspace.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - StatusPage
+  serves: []
+  registrable_domain: gridspace.com
+  role: status
+  relation: own
+- host: www.gridspace.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - Website
+  serves: []
+  registrable_domain: gridspace.com
+  role: website
+  relation: own

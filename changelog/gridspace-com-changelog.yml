@@ -1,0 +1,72 @@
+generated: '2026-10-22'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.goguava.ai/release-notes.md
+sources:
+- https://docs.goguava.ai/release-notes.md
+- https://docs.goguava.ai/api-reference/check-component-deprecation.md
+entries:
+- breaking: false
+  highlights:
+  - Guava 0.49.0 extends call-control commands to remote calls, brings custom audio track support and mute controls to the WebRTC SDK, and improves
+    barge-in handling.
+  - Remote calls now support the full set of call-control commands — set_persona / setPersona, set_language_mode / setLanguageMode, send_instruction
+    / sendInstruction, add_info / addInfo, read_script / readScript, retry_task / retryTask, and hangup — matching what was previously available
+    only on locally‑run calls.
+  - The Guava SMS API now has a typed endpoint at POST /v1/sms/send that returns the carrier delivery status.
+  - The WebRTC SDK's Call now accepts a custom audioTrack (MediaStreamTrack) and can mute and unmute the local microphone and remote audio.
+  date: '2026-10-20'
+- breaking: false
+  highlights:
+  - Guava 0.48.0 introduces a WebRTC SDK for fully in‑browser voice calling, per‑channel audio recordings for discrete recordings of speakers
+    in a conversation, and guava.RemoteCall for controlling in‑progress calls and in particular enabling warm transfers.
+  - Guava now ships a WebRTC SDK, letting you connect a browser directly to an agent for fully in‑browser voice calls without a telephony provider.
+  - WebRTC calls now accept a customPayload option for attaching arbitrary caller metadata when starting a call.
+  - A new per‑channel recordings API returns separate audio recordings for each channel of a conversation.
+  date: '2026-10-13'
+- breaking: false
+  highlights:
+  - Guava 0.47.0 brings warm transfer support to Guava numbers, adds contact deletion and retry‑delay controls to campaigns, and introduces examples
+    for building on‑device agents.
+  - Campaign contacts can now be deleted through a new DELETE endpoint, available in both the REST API and the Python SDK.
+  - Campaigns now support a configurable retry delay (retry_delay_s), settable from the CLI, REST API, and dashboard.
+  - Warm transfers are now supported on Guava numbers.
+  date: '2026-10-06'
+- breaking: false
+  highlights:
+  - Guava 0.39.0 adds TTS pronunciation directions (aliasing) to the Python and TypeScript SDKs, ships updated starter project templates, and
+    introduces preview support for agent audio testing.
+  - The Python and TypeScript SDKs now support TTS pronunciation aliasing, allowing string replacements that indicate how your agent should pronounce
+    specific words or phrases.
+  - guava create now generates improved starter projects with better inbound templates for both Python and TypeScript.
+  - The Python SDK now supports agent audio testing with pre‑recorded caller audio files and captured agent audio output.
+  date: '2026-08-18'
+- breaking: false
+  highlights:
+  - Guava 0.38.0 introduces immediate call transfers, brings campaign contact uploads to the dashboard, and adds functionality for testing pronunciation
+    outside of live calls.
+  - Preview how a Guava agent will sound pronouncing a certain word or phrase using the guava say CLI command.
+  - call.immediate_transfer is now available in the Python and TypeScript SDKs for transferring a call without waiting for agent turn completion.
+  - Contacts can now be uploaded for campaigns directly from the dashboard.
+  date: '2026-08-11'
+- breaking: false
+  highlights:
+  - Guava 0.37.0 tightens CLI usability, adds TestSession.id to the SDK testing APIs, and improves the on_escalate handler with direct access
+    to the triggering event.
+  - The on_escalate handler in the Guava Agent API now receives the triggering escalation event, making it possible to inspect event details directly
+    from the handler.
+  - TestSession.id is now available in the Python and TypeScript SDK testing APIs.
+  - openai is now an optional peer dependency in the TypeScript SDK and won't be automatically installed.
+  date: '2026-08-04'
+- breaking: false
+  highlights:
+  - Guava 0.36.0 brings TypeScript project support to the CLI and deployment pipeline, expands TypeScript SDK parity with campaign management
+    and ported helpers, and introduces customizable WebRTC widgets with an interactive configurator.
+  - guava create now scaffolds Node.js/TypeScript projects in addition to Python, and the deployment pipeline transpiles TypeScript modules automatically
+    so Node.js projects can be deployed directly.
+  - A new guava purge command removes a deployment and cleans up its associated build artifacts.
+  - Campaign management is now available.
+  date: '2026-07-28'
+current_version: 0.49.0
+note: Versioning scheme follows major.minor.patch as shown in release entries.
+docs: https://docs.goguava.ai/release-notes.md

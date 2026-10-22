@@ -1,0 +1,11 @@
+generated: '2026-10-22'
+source: https://goguava.ai:443/privacy
+method: probed
+signals:
+  data_retention:
+    evidence:
+      - source: https://goguava.ai:443/privacy
+        http_status: 200
+        fetched: "true"
+        quote: "We retain your personal information for as long as your account is active or as needed to provide you the Services."
+    note: Retains data while account active or needed for service provision.
